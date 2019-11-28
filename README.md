@@ -7,6 +7,7 @@
 - [Download](https://github.com/jfut/mod_process_security-rpm/releases)
 - `yum install mod_process_security-x.y.z-n.elx.x86_64.rpm`
 - Edit `/etc/httpd/conf.d/mod_process_security.conf`
+- `systemctl restart httpd.service`
 
 ## Usage
 
