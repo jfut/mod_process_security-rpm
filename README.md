@@ -2,6 +2,12 @@
 
 [![Build Status](https://github.com/jfut/mod_process_security-rpm/workflows/test/badge.svg?branch=master)](https://github.com/jfut/mod_process_security-rpm/actions?query=workflow%3Atest)
 
+## Install an RPM package
+
+- [Download](https://github.com/jfut/mod_process_security-rpm/releases)
+- `yum install mod_process_security-x.y.z-n.elx.x86_64.rpm`
+- Edit `/etc/httpd/conf.d/mod_process_security.conf`
+
 ## Usage
 
 ```
