@@ -2,7 +2,7 @@
 
 [![Build Status](https://github.com/jfut/mod_process_security-rpm/workflows/test/badge.svg?branch=master)](https://github.com/jfut/mod_process_security-rpm/actions?query=workflow%3Atest)
 
-https://github.com/matsumotory/mod_process_security
+RPM Packaging for [mod_process_security](https://github.com/matsumotory/mod_process_security).
 
 ## Install an RPM package
 
