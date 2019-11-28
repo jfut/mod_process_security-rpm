@@ -46,7 +46,7 @@ jobs:
       - name: Upload Assets
         uses: AButler/upload-release-assets@v1.0
         with:
-          files: "rpmbuild/RPMS/x86_64/*.rpm"
+          files: "rpmbuild/SRPMS/*.src.rpm,rpmbuild/RPMS/x86_64/*.rpm"
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           release-tag: ${{ steps.build_rpm.outputs.release-tag }}
 
