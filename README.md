@@ -20,6 +20,9 @@ Usage:
     Options:
         -d Debug mode.
 
+    Build for CentOS 8:
+        build -i centos:8
+
     Build for CentOS 7:
         build -i centos:7
 ```
