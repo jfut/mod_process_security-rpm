@@ -48,3 +48,7 @@ git tag -a v1.1.4-1 -m "v1.1.4-1"
 git push origin refs/tags/v1.1.4-1
 ```
 
+## License
+
+MIT
+
