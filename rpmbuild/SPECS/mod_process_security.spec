@@ -7,15 +7,13 @@
 
 Summary: A suEXEC module for CGI and DSO for Apache 2
 Name: mod_process_security
-Version: 1.1.4
-Release: 2%{?dist}
+Version: 1.2.0
+Release: 1%{?dist}
 License: MIT
 Group: System Environment/Daemons
 URL: https://github.com/matsumotory/mod_process_security
 Source0: https://github.com/matsumotory/%{name}/archive/v%{version}.tar.gz
 Source1: mod_process_security.conf
-Patch0: https://github.com/matsumotory/mod_process_security/compare/v1.1.4...31a0c70e9d6d6a6160525eefab6c93d8815365b4.patch
-Patch1: https://patch-diff.githubusercontent.com/raw/matsumotory/mod_process_security/pull/20.patch
 BuildRequires: httpd-devel
 BuildRequires: pkgconfig
 BuildRequires: libcap-devel
@@ -27,9 +25,6 @@ Improvement of mod_ruid2(vulnerability) and mod_suexec(performance).
 
 %prep
 %setup -q
-
-%patch0 -p1
-%patch1 -p1
 
 %build
 make
@@ -51,6 +46,9 @@ rm -rf %{buildroot}
 %{_httpd_moddir}/mod_process_security.so
 
 %changelog
+* Thu Jun 25 2020 Jun Futagawa <jfut@integ.jp> - 1.2.0-1
+- Update to version 1.2.0
+
 * Thu Nov 28 2019 Jun Futagawa <jfut@integ.jp> - 1.1.4-2
 - Base on commit: 31a0c70e9d6d6a6160525eefab6c93d8815365b4 (included WebDAV support)
 - Improve default mod_process_security.conf
