@@ -2,6 +2,10 @@
 
 [![Build Status](https://github.com/jfut/mod_process_security-rpm/workflows/test/badge.svg?branch=master)](https://github.com/jfut/mod_process_security-rpm/actions?query=workflow%3Atest)
 
+**The build of the process_security RPM has been merged upstream. Until the upstream is released, if you need the latest RPM, you can download it below.**
+
+- https://github.com/jfut/mod_process_security/releases
+
 RPM Packaging for [mod_process_security](https://github.com/matsumotory/mod_process_security).
 
 ## Install an RPM package
